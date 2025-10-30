@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EST-Sample - 홈</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Noto Sans KR,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800">
+  <!-- Header -->
+  <header class="border-b bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between gap-4">
+      <!-- 로고 (홈) -->
+      <a href="home.html" class="flex items-center gap-2 select-none">
+        <svg viewBox="0 0 100 100" class="h-7 w-7" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#f43f5e" />
+              <stop offset="50%" stop-color="#fb923c" />
+              <stop offset="100%" stop-color="#22d3ee" />
+            </linearGradient>
+          </defs>
+          <polygon points="25,15 85,50 25,85" fill="url(#g)" />
+        </svg>
+        <span class="text-2xl font-bold tracking-tight">EST-Sample</span>
+      </a>
+
+      <!-- 검색 -->
+      <form class="flex items-center gap-2 w-full max-w-md" onsubmit="event.preventDefault();">
+        <label class="sr-only" for="top-q">검색어</label>
+        <input id="top-q" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-4 focus:ring-sky-100" placeholder="자료 통합 검색" />
+        <button class="rounded-xl bg-sky-600 px-4 py-2 whitespace-nowrap text-white shadow-sm hover:bg-sky-700 active:scale-[.98]" type="submit">검색</button>
+      </form>
+
+      <!-- 보조 링크 -->
+      <nav class="hidden md:flex items-center gap-4 text-sm text-slate-600" aria-label="보조 링크">
+        <a class="hover:text-slate-900" href="#">로그인</a>
+        <span class="text-slate-300">|</span>
+        <a class="hover:text-slate-900" href="#">회원가입</a>
+        <span class="text-slate-300">|</span>
+        <a class="hover:text-slate-900" href="#">마이페이지</a>
+      </nav>
+    </div>
+
+    <!-- 상단 카테고리 탭 -->
+    <div class="border-t bg-gradient-to-r from-violet-600 via-sky-600 to-cyan-500">
+      <div class="mx-auto max-w-6xl px-4">
+        <ul id="primary-tabs" class="flex flex-wrap gap-2 py-3 text-sm text-white" role="tablist">
+          <li><a href="index.html"  class="rounded-xl bg-white/10 px-16 py-2 inline-block hover:bg-white/20">내신기출문제</a></li>
+          <li><a href="middle.html" class="rounded-xl bg-white/10 px-16 py-2 inline-block hover:bg-white/20">중등자료</a></li>
+          <li><a href="high.html"   class="rounded-xl bg-white/10 px-16 py-2 inline-block hover:bg-white/20">고등자료</a></li>
+          <li><a href="mock.html"   class="rounded-xl bg-white/10 px-16 py-2 inline-block hover:bg-white/20">모의고사</a></li>
+          <li><a href="help.html"   class="rounded-xl bg-white/10 px-16 py-2 inline-block hover:bg-white/20">이용안내·문의</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-sky-50 to-cyan-50 border-b">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">
+              수학 <span class="text-sky-600">기출·자료</span>, 한 곳에서 빠르게
+            </h1>
+            <p class="mt-3 text-slate-600">
+              학교별 내신기출문제부터 중·고등 자료, 모의고사까지. 필요한 자료를 검색하고,
+              손쉽게 업로드해 서로 공유하세요.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="index.html" class="rounded-xl bg-sky-600 px-5 py-3 text-white hover:bg-sky-700 shadow-sm">내신기출문제 바로가기</a>
+              <a href="help.html"  class="rounded-xl bg-white px-5 py-3 text-sky-700 ring-1 ring-sky-200 hover:bg-sky-50">이용 가이드 보기</a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="rounded-3xl bg-white shadow-sm ring-1 ring-slate-200 p-4">
+              <div class="rounded-2xl bg-gradient-to-r from-violet-600 via-sky-600 to-cyan-500 h-40 md:h-48"></div>
+              <div class="mt-4 grid grid-cols-3 gap-3 text-sm">
+                <div class="rounded-xl bg-slate-50 p-3 text-center">
+                  <div class="text-slate-900 font-bold text-lg">122,532</div>
+                  <div class="text-slate-500">전체 회원</div>
+                </div>
+                <div class="rounded-xl bg-slate-50 p-3 text-center">
+                  <div class="text-slate-900 font-bold text-lg">18,240</div>
+                  <div class="text-slate-500">등록 자료</div>
+                </div>
+                <div class="rounded-xl bg-slate-50 p-3 text-center">
+                  <div class="text-slate-900 font-bold text-lg">1,204</div>
+                  <div class="text-slate-500">학교 수</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 빠른 이동 -->
+    <section class="mx-auto max-w-6xl px-4 py-10">
+      <h2 class="text-xl font-bold text-slate-900">빠른 이동</h2>
+      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Card -->
+        <a href="index.html" class="group rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-700">
+              <!-- 책 아이콘 -->
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M4 5a2 2 0 0 1 2-2h11a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H7a3 3 0 0 0-3 3V5zM7 4v13a4 4 0 0 1 2-.535h7V4H7z"/></svg>
+            </span>
+            <div>
+              <div class="font-semibold">내신기출문제</div>
+              <div class="text-sm text-slate-500">학교·학년·학기 필터로 바로 찾기</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="middle.html" class="group rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 text-violet-700">
+              <!-- 연필 아이콘 -->
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zm2.92 2.83H5v-.92l8.06-8.06.92.92-8.06 8.06zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/></svg>
+            </span>
+            <div>
+              <div class="font-semibold">중등자료</div>
+              <div class="text-sm text-slate-500">단원 프린트, 수행, 보충 등</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="high.html" class="group rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+              <!-- 모자 아이콘 -->
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm0 11.09L5.13 9 12 4.91 18.87 9 12 14.09zM4 12v4c0 2.21 3.58 4 8 4s8-1.79 8-4v-4l-8 4-8-4z"/></svg>
+            </span>
+            <div>
+              <div class="font-semibold">고등자료</div>
+              <div class="text-sm text-slate-500">공통·선택과목, 수행/프린트</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="mock.html" class="group rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-700">
+              <!-- 시험지 아이콘 -->
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16l4-2 4 2 4-2 4 2V8l-6-6zM13 3.5 18.5 9H13V3.5zM8 11h8v2H8v-2zm0 4h5v2H8v-2z"/></svg>
+            </span>
+            <div>
+              <div class="font-semibold">모의고사</div>
+              <div class="text-sm text-slate-500">학교/학원 모고 자료 모음</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 시작 가이드 -->
+    <section class="mx-auto max-w-6xl px-4 pb-10">
+      <h2 class="text-xl font-bold text-slate-900">3분 만에 시작하기</h2>
+      <ol class="mt-4 grid md:grid-cols-3 gap-4 text-sm">
+        <li class="rounded-2xl border bg-white p-5 shadow-sm">
+          <div class="font-semibold text-slate-900">1) 검색 & 필터</div>
+          <p class="mt-2 text-slate-600">학교/학년/학기·시험 분류로 원하는 자료를 빠르게 좁혀보세요.</p>
+        </li>
+        <li class="rounded-2xl border bg-white p-5 shadow-sm">
+          <div class="font-semibold text-slate-900">2) 다운로드 & 활용</div>
+          <p class="mt-2 text-slate-600">프린트·문항 아이디어·유형 파악 등 수업과 평가에 바로 적용.</p>
+        </li>
+        <li class="rounded-2xl border bg-white p-5 shadow-sm">
+          <div class="font-semibold text-slate-900">3) 업로드 & 공유</div>
+          <p class="mt-2 text-slate-600">내 자료를 업로드해 서로 돕는 최고의 DB를 함께 만듭니다.</p>
+        </li>
+      </ol>
+      <div class="mt-6">
+        <a href="index.html" class="rounded-xl bg-slate-900 px-5 py-3 text-white hover:bg-black">지금 자료 찾아보기</a>
+      </div>
+    </section>
+
+    <!-- 공지/소식 -->
+    <section class="mx-auto max-w-6xl px-4 pb-14">
+      <div class="rounded-2xl border bg-white p-5 shadow-sm">
+        <div class="flex items-center justify-between">
+          <h2 class="text-xl font-bold text-slate-900">공지 & 소식</h2>
+          <a href="help.html" class="text-sm text-sky-700 hover:underline">전체보기</a>
+        </div>
+        <ul class="mt-3 text-sm divide-y">
+          <li class="py-3 flex items-center justify-between">
+            <span class="truncate pr-4">[업데이트] 내신기출 목록 정렬/필터 속도 개선</span>
+            <time class="shrink-0 text-slate-400">2025-10-01</time>
+          </li>
+          <li class="py-3 flex items-center justify-between">
+            <span class="truncate pr-4">[안내] 자료 업로드 가이드 & 저작권 유의사항</span>
+            <time class="shrink-0 text-slate-400">2025-09-12</time>
+          </li>
+          <li class="py-3 flex items-center justify-between">
+            <span class="truncate pr-4">[신규] 중등/고등 공통 템플릿 추가</span>
+            <time class="shrink-0 text-slate-400">2025-08-27</time>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-xs text-slate-500">
+      © 2025 EST-Sample. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // 홈은 탭 하이라이트 없음 (필요 시 여기에 로직 추가 가능)
+  </script>
+</body>
+</html>
